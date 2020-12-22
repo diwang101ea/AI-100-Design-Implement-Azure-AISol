@@ -9,7 +9,10 @@ using Microsoft.Extensions.Configuration;
 
 namespace ImageStorageLibrary
 {
-
+    /// <summary>
+    /// hi
+    /// </summary>
+    /// <typeparam name="R"></typeparam>
     public interface ICosmosDbService<R> where R : class
     {
         Task<IEnumerable<R>> GetItemsAsync(string query, QueryRequestOptions options);
